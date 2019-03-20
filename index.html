@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Wedding of Yoga and Shinta </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by QBOOTSTRAP.COM" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="QBOOTSTRAP.COM" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by QBOOTSTRAP.COM
+		
+	Website: 		http://qbootstrap.com/
+	Email: 			info@qbootstrap.com
+	Twitter: 		http://twitter.com/Q_bootstrap
+	Facebook: 		https://www.facebook.com/Qbootstrap
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific popup  -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script>
+	var countDownDate = new Date("May 5, 2019 10:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get todays date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="demo"
+	  document.getElementById("days").innerHTML = days + " days";
+	  document.getElementById("hours").innerHTML = hours + " hours";
+	  document.getElementById("minutes").innerHTML = minutes + " min";
+	  document.getElementById("seconds").innerHTML = seconds + " sec";
+	  //+ "</span> " + hours + "h "
+	  //+ minutes + "m " + seconds + "s ";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("days").innerHTML = 0;
+	  document.getElementById("hours").innerHTML = 0;
+	  document.getElementById("minutes").innerHTML = 0;
+	  document.getElementById("seconds").innerHTML = 0;
+	  }
+	}, 1000);
+	
+	function saveTextAsFile()
+	{
+		var textToSave = document.getElementById("inputTextToSave").value;
+		var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+		var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+		var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+	 
+		var downloadLink = document.createElement("a");
+		downloadLink.download = fileNameToSaveAs;
+		downloadLink.innerHTML = "Download File";
+		downloadLink.href = textToSaveAsURL;
+		downloadLink.onclick = destroyClickedElement;
+		downloadLink.style.display = "none";
+		document.body.appendChild(downloadLink);
+	 
+		downloadLink.click();
+	}
+	 
+	function destroyClickedElement(event)
+	{
+		document.body.removeChild(event.target);
+	}
+	 
+	function loadFileAsText()
+	{
+		var fileToLoad = document.getElementById("fileToLoad").files[0];
+	 
+		var fileReader = new FileReader();
+		fileReader.onload = function(fileLoadedEvent) 
+		{
+			var textFromFileLoaded = fileLoadedEvent.target.result;
+			document.getElementById("inputTextToSave").value = textFromFileLoaded;
+		};
+		fileReader.readAsText(fileToLoad, "UTF-8");
+	}
+	 
+	</script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="qbootstrap-header">
+		<div class="container">
+			<!-- <div class="row"> -->
+		    <nav class="navbar navbar-default">
+	        <div class="navbar-header">
+	        	<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+	          	<a class="navbar-brand" href="index.html">Wedding Invitation</a> 
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+	            <li><a href="#" data-nav-section="groom-bride"><span>Groom &amp; Bride</span></a></li>
+	            <li><a href="#" data-nav-section="when-where"><span>When &amp; Where</span></a></li>
+	            <li><a href="#" data-nav-section="rsvp"><span>RSVP</span></a></li>
+	          </ul>
+	        </div>
+		    </nav>
+		  <!-- </div> -->
+	  </div>
+	</header>
+	
+	<div class="qbootstrap-hero" data-section="home">
+		<div class="qbootstrap-overlay"></div>
+		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/image2.jpg);">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box svg-sm colored">
+								<!--<img src="images/flaticon/svg/flower1.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">-->
+								<h1 class="holder"><span>The Wedding of</span></h1>
+								<h2>Yoga &amp; Shinta</h2>
+								<p>05.05.2019</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="qbootstrap-couple" data-section="groom-bride" class="qbootstrap-section-gray">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 animate-box">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/flower3.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>We are Getting Married</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+						<img src="images/groom.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h3>Yoga</h3>
+						<span>Groom</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 nopadding">
+						<h2 class="amp-center"><img src="images/flaticon/svg/flower4.png"  class="svg img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></h2>
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+						<img src="images/bride.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h3>Shinta</h3>
+						<span>Bride</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(images/image1.jpg);" data-section="wedding-day">
+		<div class="overlay"></div>
+		<div class="display-over">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-12 section-heading text-center svg-sm colored">
+						<p></p>
+						<img src="images/flaticon/svg/flower1.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2 class="">Wedding Count Down</h2>
+						<span class="datewed">Sunday, May 5th, 2019</span>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p class="countdown">
+							<span id="days">-</span>
+							<span id="hours">-</span>
+							<span id="minutes">-</span>
+							<span id="seconds">-</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--<div id="qbootstrap-groom-bride" data-section="groom-bride">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
+						<img src="images/flaticon/svg/002-wedding-couple.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Groom &amp; Bride</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="couple groom text-center animate-box">
+						<img src="images/groom1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<div class="desc">
+							<h2>I Putu Yoga Permana</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="couple bride text-center animate-box">
+						<img src="images/bride1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<div class="desc">
+							<h2>Veronica Shinta Pramudianti</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<!--<div id="qbootstrap-story" data-section="story">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm-2">
+						<img src="images/flaticon/svg/flower4.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Our Love Story</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">First We Meet</h3>
+									<span class="date">September, 2016</span>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay overlay-2"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Dating and Relationship</h3>
+									<span class="date">August 21, 2017</span>
+								</div>
+							</div>
+						</li>
+						 <li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Dating and Relationship</h3>
+									<span class="date">August 21, 2017</span>
+								</div>
+							</div>
+						</li> -->
+						<!-- <li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-4.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay overlay-2"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">We're Engaged</h3>
+									<span class="date">February, 2019</span>
+								</div>
+							</div>
+						</li> 
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	<div id="qbootstrap-when-where" data-section="when-where">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/flower1.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Ceremony &amp; Reception</h2>
+						<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext">
+							<h3>Together with our families, we are request the honor of your presence as we tie the knot</h3>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 text-center animate-box">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/wed-ceremony.jpg);"></div>
+						<div class="desc">
+							<h3>Wedding Ceremony</h3>
+							<div class="row">
+								<div class="col-md-2 col-md-push-5">
+									<div class="icon-tip">
+										<span class="icon"><i class="icon-heart-o"></i></span>
+									</div>
+								</div>
+								<div class="col-md-5 col-md-pull-1">
+									<div class="date">
+										<i class="icon-calendar"></i>
+										<span>Sunday</span>
+										<span>05 May. 2019</span>
+									</div>
+								</div>
+								<div class="col-md-5 col-md-pull-1">
+									<div class="date">
+										<i class="icon-clock2"></i>
+										<span>10:00 AM</span>
+										<span>12:00 AM</span>
+									</div>
+								</div>
+							</div>
+							<p>Santo Ignatius Catolic Church</p>
+							<p>Jl. Laksda Yos Sudarso No.6, Kota Magelang, Jawa Tengah</p>
+							<p><a href="https://goo.gl/maps/4YBcZzKMWiN2" class="btn btn-primary btn-sm">Display on Maps</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div>
+						<div class="desc">
+							<h3>Wedding Reception</h3>
+							<div class="row">
+								<div class="col-md-2 col-md-push-5">
+									<div class="icon-tip">
+										<span class="icon"><i class="icon-heart-o"></i></span>
+									</div>
+								</div>
+								<div class="col-md-5 col-md-pull-1">
+									<div class="date">
+										<i class="icon-calendar"></i>
+										<span>Sunday</span>
+										<span>05 May. 2019</span>
+									</div>
+								</div>
+								<div class="col-md-5 col-md-pull-1">
+									<div class="date">
+										<i class="icon-clock2"></i>
+										<span>15:00 PM</span>
+										<span>17:00 PM</span>
+									</div>
+								</div>
+							</div>
+							<p>Pendopo BPPK Kota Magelang</p> 
+							<p>Jl. Alun-Alun Utara No.2, Kota Magelang, Jawa Tengah</p>
+							<p><a href="https://goo.gl/maps/JHRbJXMC7eL2" class="btn btn-primary btn-sm">Display on Maps</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="map" class="qbootstrap-map"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(images/image3.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<!--<img src="images/flaticon/svg/flower1.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">-->
+						<h2>You Are Invited</h2>
+						<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext">
+							<h3>The favor of your response is requested by April 21st 2019</h3>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" method="post">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="text" class="form-control" name="guestname" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="number" class="sr-only">Number Attending</label>
+								<input type="text" class="form-control" name="guestnumber" placeholder="Number Attending">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="button" class="btn btn-default btn-block">I am Attending</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="qbootstrap-gallery" data-section="gallery">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/flower3.png" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Our Selfie Photos</h2>
+						<div class="row">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup image-popup" href="images/gallery-1.jpg"><img src="images/gallery-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-10.jpg"><img src="images/gallery-10.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-6.jpg"><img src="images/gallery-6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-5.jpg"><img src="images/gallery-5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-7.jpg"><img src="images/gallery-7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-3.jpg"><img src="images/gallery-3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<!--<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-4.jpg"><img src="images/gallery-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>-->
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-8.jpg"><img src="images/gallery-8.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-9.jpg"><img src="images/gallery-9.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2019 <a href="index.html">Wedding </a>. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
+
